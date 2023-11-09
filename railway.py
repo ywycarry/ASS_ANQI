@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 
 def fare_price(distance, different_regions, hubs_in_dest_region):
     fp = 1+distance*2.71828^(-distance/100)*(1+different_regions*hubs_in_dest_region/10)
+    # the equation is a rough approximation of the fare price
     return fp
 
 class Station:
